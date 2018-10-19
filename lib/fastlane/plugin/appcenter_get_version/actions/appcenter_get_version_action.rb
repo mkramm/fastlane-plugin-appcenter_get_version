@@ -25,7 +25,7 @@ module Fastlane
         case response
         when Net::HTTPSuccess
           json_response = JSON.parse(response.body)
-          json_response['version']
+          json_response['version'].to_i
         else
           response.value
         end
@@ -41,6 +41,9 @@ module Fastlane
 
       def self.return_value
         # If your method provides a return value, you can describe here what it does
+        [
+          ['BUILD_VERSION', 'The latest build version']
+        ]
       end
 
       def self.details
