@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'markuskramm@gmail.com'
 
   spec.summary       = 'get the latest build version from the app center'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-appcenter_get_version"
+  # spec.homepage      = "https://github.com/Krammi/fastlane-plugin-appcenter_get_version"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
